@@ -90,6 +90,7 @@ i {
 
 .header-logo {
   margin-top: 10px;
+  margin-left: 30px;
 }
 
 .header-button:hover {
@@ -185,6 +186,7 @@ i {
   background-color: #040f1a;
   overflow: hidden;
   color: var(--cor8);
+  
 }
 
 .about-content {
@@ -194,11 +196,17 @@ i {
   gap: 14px;
   padding: 34px 14px 64px 14px;
 }
+
+.placa1 {
+  justify-content: center;
+  padding-left: 100px;
+}
+
 .about-content img {
   max-width: 570px;
 }
 
-.about-content div {
+.about-content {
   flex: 1;
 }
 
@@ -208,10 +216,48 @@ i {
 }
 .sobre-descrição p {
   font-size: 18px;
+  padding-right: 25px;
+  text-align: justify;
   margin-bottom: 14px;
   line-height: 150%;
 }
 
+.arthur {
+  background-color: #040f1a;
+  overflow: hidden;
+  color: var(--cor8);
+  display: flex;
+  flex-flow: row-reverse wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.about-arthur {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 34px 14px 64px 14px;
+  flex-flow: row-reverse wrap;
+
+}
+
+.img-arthur {
+  min-width: 400px;
+  max-width: 500px;
+  max-height: 600px;
+  margin-bottom: 300px;
+}
+
+.sobre-arthur {
+  text-align: center;
+  max-width: 600px;
+  margin-right: 45px;
+}
+
+
+
+/** Serviços **/
 .services {
   background-color: var(--cor8);
   color: var(--co1);
@@ -304,6 +350,21 @@ i {
   gap: 20px;
 }
 
+
+.footer-icons a:hover i {
+  animation: tranlateY 0.8s infinite alternate;
+  color: #ffffff;
+}
+
+@keyframes tranlateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+
 .botton-whatsapp {
   position: fixed;
   bottom: 14px;
@@ -322,4 +383,9 @@ i {
   .botton-whatsapp img {
     max-width: 54px;
   }
-}/*# sourceMappingURL=style.css.map */
+  
+}
+
+
+
+/*# sourceMappingURL=style.css.map */
